@@ -1,0 +1,33 @@
+package UniversitySystem;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.Vector;
+
+import enums.Faculty;
+import enums.TypeOfLesson;
+
+public class Lesson implements Comparable, Serializable {
+    
+    private String room;
+
+    private Vector<Date> time;
+    
+    private TypeOfLesson lessonType;
+    
+    private Faculty faculty;
+    
+    private double grade;
+    
+    private boolean isAttended;
+    
+    private String lessonID;
+    
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+    
+    
+}
